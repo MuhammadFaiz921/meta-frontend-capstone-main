@@ -1,0 +1,45 @@
+/* General Container */
+.app-container {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Karla', sans-serif;
+  background-color: #fff8e1; /* Light background to match restaurant theme */
+  color: #495E57;
+}
+
+/* Header */
+.app-header {
+  background-color: #495E57;
+  width: 100%;
+  padding: 1.5rem 0;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #F4CE14;
+  font-family: 'Markazi Text', serif;
+}
+
+/* Links */
+.app-link {
+  color: #F4CE14;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.app-link:hover {
+  color: #ffffff;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .app-container {
+    padding: 1rem;
+  }
+  .app-header {
+    font-size: 1.25rem;
+  }
+}

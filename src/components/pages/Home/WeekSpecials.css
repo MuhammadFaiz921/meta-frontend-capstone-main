@@ -1,0 +1,48 @@
+.week-specials {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+.week-specials-header {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.875rem;
+}
+
+.week-specials-header h2 {
+  font-family: "Markazi Text", serif;
+  font-size: 2.5rem;
+  font-weight: normal;
+  line-height: 1;
+}
+
+/*-- Media Queries ------------------------------------------------------*/
+
+@media (max-width: 960px) {
+  .week-specials {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .week-specials-header {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 692px) {
+  .week-specials {
+    grid-template-columns: 1fr;
+  }
+
+  .week-specials-header {
+    grid-column: 1;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .week-specials-header h2 {
+    margin-bottom: 1rem;
+  }
+}
